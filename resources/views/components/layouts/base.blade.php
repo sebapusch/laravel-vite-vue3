@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ $title ?? trans('app') }}</title>
 
-    {{ vite_assets() }}
+    {{ load_assets() }}
 </head>
 <body class="antialiased">
     <div id="app">

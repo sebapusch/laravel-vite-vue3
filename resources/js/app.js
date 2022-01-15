@@ -7,6 +7,9 @@ import 'bootstrap';
 import { createApp, defineAsyncComponent } from "vue";
 
 createApp({
+    provide: {
+        __
+    },
     components: {
         Welcome: defineAsyncComponent(() => import('../vue-components/pages/Welcome.vue')),
     }

@@ -13,6 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/', function (\Illuminate\Http\Request $request) {
+    $lang = $request->get('lang', 'en');
+    config(['app.locale' => $lang]);
     return view('pages/welcome');
 });
