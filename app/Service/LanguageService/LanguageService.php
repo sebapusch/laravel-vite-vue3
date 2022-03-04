@@ -113,7 +113,7 @@ class LanguageService implements LanguageServiceInterface
         }
 
         foreach ($locales as $locale => $lang) {
-            $path = resource_path() . "/lang/{$lang}/$filename.php";
+            $path = resource_path() . "/lang/{$lang}/{$filename}.php";
             if(file_exists($path)) {
                 $paths[$locale] = $path;
             }
