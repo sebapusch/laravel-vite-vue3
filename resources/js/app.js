@@ -4,7 +4,7 @@ import './bootstrap';
 
 import 'bootstrap';
 
-import { createApp, defineAsyncComponent } from "vue";
+import { createApp, defineAsyncComponent } from 'vue';
 
 createApp({
     provide: {
